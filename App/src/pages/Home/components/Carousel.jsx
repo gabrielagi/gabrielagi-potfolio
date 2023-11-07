@@ -19,7 +19,7 @@ import {
 
 export default function Carousel() {
   return (
-    <div className="mx-auto flex flex-row bg-blackFred-300 w-[auto] py-[200px] h-[800px] bg-red">
+    <div className="mx-auto flex flex-row bg-blackFred-300 w-full py-[200px] h-[800px] bg-red">
       <Swiper
         // className="w-[600px] h-[600px]"
         effect={"coverflow"}
@@ -36,7 +36,6 @@ export default function Carousel() {
           modifier: 1,
           slideShadows: false,
         }}
-        spaceBetween={5}
         autoplay={{
           delay: 1700,
           disableOnInteraction: false,

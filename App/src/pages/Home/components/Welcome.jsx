@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import "tailwindcss/tailwind.css";
 import { Link } from "react-router-dom";
 import Carousel from "./Carousel";
+import CardsCarousel from "./CardsCarousel";
 
 const Welcome = () => {
   return (
@@ -24,7 +25,8 @@ const Welcome = () => {
           </Link>
         </div>
         <div className="md:ml-40">
-          <Carousel />
+          {/* <Carousel /> */}
+          <CardsCarousel />
         </div>
       </div>
     </div>
