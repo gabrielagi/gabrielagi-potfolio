@@ -19,13 +19,13 @@ import {
 
 export default function Carousel() {
   return (
-    <div>
+    <div className="mx-auto flex flex-row bg-blackFred-300 w-[auto] py-[200px] h-[800px] bg-red">
       <Swiper
-        // className='w-[600px] h-[600px]'
+        // className="w-[600px] h-[600px]"
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={"3"}
+        slidesPerView={"1"}
         loading="lazy"
         loop={true}
         navigation={false}
@@ -36,7 +36,7 @@ export default function Carousel() {
           modifier: 1,
           slideShadows: false,
         }}
-        spaceBetween={220}
+        spaceBetween={5}
         autoplay={{
           delay: 1700,
           disableOnInteraction: false,
@@ -48,28 +48,29 @@ export default function Carousel() {
           <img
             src={slide_image1}
             alt="slide_image"
-            // className="w-[600px] h-[600px]"
+            className="w-[250px] h-[320px]"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={slide_image2}
             alt="slide_image"
-            // className="w-[600px] h-[600px]"
+            className="w-[450px] h-[320px]"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={slide_image3}
             alt="slide_image"
-            // className="w-[600px] h-[600px]"
+            className="w-[450px] h-[320px]"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={slide_image4}
             alt="slide_image"
-            // className="w-[600px] h-[600px]"
+            // className="w-[600px] h-[400px]"
+            className="w-[450px] h-[320px]"
           />
         </SwiperSlide>
       </Swiper>

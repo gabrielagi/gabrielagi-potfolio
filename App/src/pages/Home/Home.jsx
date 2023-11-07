@@ -14,20 +14,20 @@ const Home = () => {
   return (
     <div className="w-full">
       <section
-        className=" flex items-center justify-center bg-gradient-to-r from-purple-600 via-purple-700 to-purple-800 min-h-[40vh]"
+        className=" flex items-center justify-center bg-gradient-to-r from-purple-900 via-purple-700 to-purple-500"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
         <Welcome />
       </section>
-
+      {/* 
       <section className="bg-white" data-aos="fade-up" data-aos-duration="1000">
         <p>New Section</p>
       </section>
 
       <section data-aos="fade-up" data-aos-duration="1000">
         <p>New Section</p>
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -7,14 +7,14 @@ const Welcome = () => {
   return (
     <div className="w-full">
       <div className="max-w-[1480px] m-auto grid md:grid-cols-2 md:text-left text-center">
-        <div className="sm:py-[180px] py-20 font-poppins sm:ml-40 ml-10 md:ml-40 mr-10">
+        <div className="sm:py-[180px] py-20 font-poppins sm:ml-20 ml-10 md:ml-20 mr-10">
           <p className="sm:text-2xl text-2xl text-[#fff] font-medium block">
             #fullstackdeveloper
           </p>
           <h1 className="sm:text-8xl text-4xl font-semibold">
             Gabriela Iriart
           </h1>
-          <p className="mt-4 text-[16px] text-[#9a9a9a]  block">
+          <p className="mt-4 text-[16px] text-[#9a9a9a] block">
             I'm a passionate Full Stack Developer with a lot of kpaoiepaierpaior
           </p>
           <Link to="/shop">
@@ -23,9 +23,9 @@ const Welcome = () => {
             </button>
           </Link>
         </div>
-        <aside>
+        <div className="md:ml-40">
           <Carousel />
-        </aside>
+        </div>
       </div>
     </div>
   );
