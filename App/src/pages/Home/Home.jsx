@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Welcome from "./components/Welcome";
+import { BaseHome } from "./components/BaseHome";
 
 const Home = () => {
   useEffect(() => {
@@ -14,7 +15,7 @@ const Home = () => {
   return (
     <div className="w-full">
       <section
-        className=" flex items-center justify-center bg-gradient-to-r from-purple-900 via-purple-700 to-purple-500"
+        className=" flex items-center justify-center bg-[#5840BB]"
         data-aos="fade-up"
         data-aos-duration="1000"
       >

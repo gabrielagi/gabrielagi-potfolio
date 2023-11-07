@@ -24,9 +24,9 @@ export default function CardsCarousel() {
         modules={[EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img src={slide_image1} alt="" />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <img src={slide_image2} alt="" />
         </SwiperSlide>

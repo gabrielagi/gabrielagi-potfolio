@@ -5,18 +5,10 @@ module.exports = {
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    // screens: {
-    //   'tablet': '640px',
-    //   // => @media (min-width: 640px) { ... }
-
-    //   'laptop': '1024px',
-    //   // => @media (min-width: 1024px) { ... }
-
-    //   'desktop': '1280px',
-    //   // => @media (min-width: 1280px) { ... }
-    // }
     extend: {
       fontFamily: {
+        baloo: ["Baloo Regular", "sans"], // Fuente Baloo Regular
+        baloo2: ["Baloo 2", "sans"], // Fuente Baloo 2
         poppins: ["Poppins", "sans"],
       },
     },
