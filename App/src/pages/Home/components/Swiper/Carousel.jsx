@@ -1,8 +1,8 @@
 import React from "react";
-import slide_image1 from "../../../assets/swiper-currencycharmeleon.png";
-import slide_image2 from "../../../assets/swiper-greencorner.png";
-import slide_image3 from "../../../assets/swiper-pokemon.png";
-import slide_image4 from "../../../assets/swiper-rickandmorty.png";
+import slide_image1 from "../../../../assets/swiper-currencycharmeleon.png";
+import slide_image2 from "../../../../assets/swiper-greencorner.png";
+import slide_image3 from "../../../../assets/swiper-pokemon.png";
+import slide_image4 from "../../../../assets/swiper-rickandmorty.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
