@@ -21,7 +21,7 @@ const Welcome = () => {
             Full Stack Developer
           </p>
           <div className="bg-[#724FFF] rounded-full text-white text-center px-5 py-2 absolute right-0 mt-14">
-            <p className="text-sm font-semibold">Last Projects</p>
+            <p className="text-sm font-semibold">Recent Projects</p>
           </div>
           <div className="mt-24">
             <CardsCarousel />
