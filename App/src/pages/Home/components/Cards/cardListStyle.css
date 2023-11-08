@@ -1,0 +1,47 @@
+.card {
+  background-color: bisque;
+  padding: 3rem 5rem;
+  border-radius: 2rem;
+}
+
+.card p {
+  padding-top: 1rem;
+  line-height: 150%;
+}
+
+.expand {
+  width: 35rem;
+}
+
+.rectangular-card {
+  border: 2px solid #5840bb;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #1d252d;
+  font-size: 14px;
+  box-shadow: 0px 10px 20px rgba(132, 131, 131, 0.3);
+  width: 160px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangular-card h5,
+.rectangular-card h2 {
+  margin: 0;
+}
+
+.subtitle-container {
+  margin-top: 10px;
+}
+
+.subtitle-word {
+  color: #fff;
+  background-color: #a58eff;
+  font-size: 13px;
+  border-radius: 15px;
+  font-weight: 500;
+  padding: 0px 10px 0px 10px;
+}

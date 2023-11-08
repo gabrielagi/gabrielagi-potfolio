@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Soft Skills ✨🤗🙌",
+    "subtitle": ["Communication", "Teamwork", "Adaptability"],
+    "description": "Driven by a passion for sharing knowledge and empowering others, I volunteer my time to guide and mentor individuals embarking on their programming journey. From setting up their development environments to navigating the intricacies of Git. I am a good communicator, able to explain complex technical concepts in simple terms. My commitment to volunteering has not only honed my technical expertise but also refined my soft skills. My collaborative spirit thrives in diverse teams, where I actively contribute, embrace different perspectives, and foster a spirit of innovation.",
+    "image": "soft_skills_image.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Languages",
+    "subtitle": ["JavaScript", "TypeScript", "Java", "SQL"],
+    "description": "Building modern and responsive web applications using the latest technologies.",
+    "image": "web_dev_image.jpg"
+  },
+  {
+    "id": 3,
+    "title": "UX UI",
+    "subtitle": ["Jquery", "Aos", "Chart.js"],
+    "description": "Creating cross-platform mobile apps with a focus on user experience and performance.",
+    "image": "mobile_app_dev_image.jpg"
+  }
+]
