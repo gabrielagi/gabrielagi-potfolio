@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import TabsRender from "./Tabs";
 
 const SelectedCard = ({ item, onClose }) => {
   return (
@@ -17,7 +18,7 @@ const SelectedCard = ({ item, onClose }) => {
         color: "#000",
         background: "white",
         boxShadow: "0px 10px 30px rgba(0,0,0, 0.1)",
-        padding: "2rem",
+        padding: "1.5rem",
         width: "30rem",
         borderRadius: "10px",
       }}
@@ -31,7 +32,7 @@ const SelectedCard = ({ item, onClose }) => {
         </button>
         <h2 className="mb-4 justify-center text-center">{item.title}</h2>
       </div>
-      <p>{item.description}</p>
+      {item.id === 3 ? <TabsRender /> : <p>{item.description}</p>}
     </motion.div>
   );
 };

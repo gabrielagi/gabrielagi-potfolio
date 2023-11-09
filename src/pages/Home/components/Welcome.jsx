@@ -78,7 +78,7 @@ const Welcome = () => {
                 {`Visit my projects `}
               </button>
             </Link> */}
-            <p className=" text-[#1d252d]">Welcome to my portfolio!</p>
+            <p className=" text-[#1d252d] mt-10">Get in Touch!</p>
           </div>
         </div>
       </div>
