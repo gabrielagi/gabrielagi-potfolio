@@ -5,14 +5,12 @@ import CardsCarousel from "./Swiper/CardsCarousel";
 import { Link } from "react-router-dom";
 import CardList from "./Cards/CardList";
 import techskills from "./techskills.json";
+import Linkedin from "../../../assets/linkedin-logo.png";
+import Github from "../../../assets/github-logo.png";
+import Email from "../../../assets/email-logo.png";
 
 const Welcome = () => {
-  const items = [
-    { id: 1, title: "Card 1", subtitle: "Subtitle 1" },
-    { id: 2, title: "Card 2", subtitle: "Subtitle 2" },
-    { id: 3, title: "Card 3", subtitle: "Subtitle 3" },
-  ];
-
+  const [showEmail, setShowEmail] = useState(false);
   return (
     <div className="w-full h-auto">
       <div className="max-w-[1900px] h-auto mx-auto grid md:grid-cols-2 md:text-left text-center">
@@ -55,7 +53,7 @@ const Welcome = () => {
                 </p>
               </div>
             </div>
-            <div className="relative flex items-center mt-10">
+            <div className="relative flex items-center mt-16">
               <p className="font-extrabold text-[#1d252d] text-[40px]">Hi!</p>
               <p className="text-[30px] ml-2 mr-2">👋</p>
               <p className="font-regular text-[#1d252d] text-[40px]">
@@ -71,14 +69,67 @@ const Welcome = () => {
             </p>
 
             <div className="flex mt-6">
-              <CardList items={items} />
+              <CardList />
             </div>
-            {/* <Link to="/shop">
-              <button className="mt-16 bg-green-500 text-white font-semibold py-4 px-8 rounded hover:bg-green-600 font-baloo2 flex mx-auto">
-                {`Visit my projects `}
-              </button>
-            </Link> */}
-            <p className=" text-[#1d252d] mt-10">Get in Touch!</p>
+
+            <div className="mt-12 flex">
+              <p className="flex text-[20px] font-baloo2 text-[#1d252d] ml-12 mr-3">
+                New Technologies:
+              </p>
+              <p className="text-[15px] font-semibold  bg-[#a58eff] rounded-full text-white text-center px-4 py-1">
+                React Native, Java, Spring Boot
+              </p>
+            </div>
+            <div>
+              <div className="flex justify-center mt-10">
+                <Link
+                  to="https://www.linkedin.com/in/gabriela-iriart/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-2"
+                >
+                  <img src={Linkedin} alt="Instagram" className="w-10 h-10" />
+                </Link>
+                <Link
+                  to="https://www.github.com/gabrielagi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-2"
+                >
+                  <img src={Github} alt="Twitter" className="w-10 h-10" />
+                </Link>
+                <Link className="mx-2" onClick={() => setShowEmail(true)}>
+                  <img src={Email} alt="Email" className="w-10 h-10" />
+                </Link>
+                {showEmail && (
+                  <div className="fixed z-10">
+                    <div className="bg-white border-2 border-[#724FFF] rounded-full text-[#724FFF] text-center px-10 py-2 absolute">
+                      <p className="text-[14px] font-semibold">
+                        gabrielairiart.gi@gmail.com
+                      </p>
+                    </div>
+                    <div className="absolute right-4 mt-2">
+                      <button
+                        className="right-0 bg-red-400 py-0 px-2 justify-center text-center text-[#fff]"
+                        onClick={() => setShowEmail(false)}
+                      >
+                        x
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="flex mt-6">
+              <p className=" text-[#1d252d] block text-3xl">Get in Touch!</p>
+              <div className="text-center px-5 py-2 absolute right-6">
+                <Link to="https://calendly.com/gabrielairiart/30min">
+                  <p className=" text-[#724FFF] ml-auto font-bold text-[18px]">
+                    Schedule a Meeting
+                  </p>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
