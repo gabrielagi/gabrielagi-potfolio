@@ -14,12 +14,16 @@ const CardList = () => {
           key={item.id}
           layoutId={item.id}
           onClick={() => setSelectedId(selectedId === item.id ? null : item.id)}
-          className="rectangular-card"
+          className="rectangular-card relative overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out"
         >
           <motion.h2>{item.title}</motion.h2>
           <div className="subtitle-container">
             {item.subtitle.map((word, index) => (
-              <span key={index} className="subtitle-word">
+              <span
+                key={index}
+                className="subtitle-word"
+                style={{ userSelect: "none" }}
+              >
                 {word}{" "}
               </span>
             ))}
