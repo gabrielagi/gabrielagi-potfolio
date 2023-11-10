@@ -26,8 +26,10 @@ a:hover {
 body {
   background-color: #fafdfe;
   margin: 0;
+  padding: 0;
   max-width: 100%;
   min-height: 100%;
+  font-family: "Baloo 2", sans-serif;
 }
 
 h1 {

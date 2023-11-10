@@ -5,11 +5,8 @@ import HH from "../../../../assets/HH_GabrielaIriart.jpg";
 const Tabs = () => {
   const [openTab, setOpenTab] = useState(1);
 
-  const [isImageLarge, setIsImageLarge] = useState(false);
-
-  const toggleImageSize = () => {
-    setIsImageLarge((prev) => !prev);
-  };
+  const [isImageFS, setIsImageFS] = useState(false);
+  const [isImageHH, setIsImageHH] = useState(false);
 
   return (
     <>
@@ -93,9 +90,29 @@ const Tabs = () => {
                   <img
                     src={FullStack}
                     alt="Full Stack Developer"
-                    className={isImageLarge ? "w-full" : "w-20"}
-                    onClick={toggleImageSize}
+                    // className={isImageLarge ? "w-full" : "w-20"}
+                    className="w-20"
+                    onClick={() => setIsImageFS(true)}
                   />
+                  {isImageFS && (
+                    <div className="fixed z-10 inset-0 bg-white flex items-center justify-center">
+                      <div className="p-4 rounded-lg">
+                        <img
+                          src={FullStack}
+                          alt="Descripción de la imagen"
+                          className="w-full"
+                        />
+                      </div>
+                      <div className="absolute top-4 right-4">
+                        <button
+                          className="right-0 bg-red-400 py-0 px-2 justify-center text-center text-[#fff]"
+                          onClick={() => setIsImageFS(false)}
+                        >
+                          x
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                   <p>
@@ -110,9 +127,9 @@ const Tabs = () => {
                   </p>
                   <img
                     src={HH}
-                    alt="Full Stack Developer"
-                    className={isImageLarge ? "w-full" : "w-20"}
-                    onClick={toggleImageSize}
+                    alt="HH Mentor"
+                    className="w-20"
+                    onClick={() => setIsImageHH(true)}
                   />
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
@@ -129,13 +146,27 @@ const Tabs = () => {
                     understanding user experiences, and ensuring the highest
                     standards of software quality.
                     <br />
-                    <br />
-                    These specialized skills, coupled with a foundation in
-                    technology, uniquely position me to navigate the
-                    intersection of creativity, technology, and user-centric
-                    design.
                   </p>
                 </div>
+                {isImageHH && (
+                  <div className="fixed z-10 inset-0 bg-white flex items-center justify-center">
+                    <div className="p-4 rounded-lg">
+                      <img
+                        src={HH}
+                        alt="Descripción de la imagen"
+                        className="w-full"
+                      />
+                    </div>
+                    <div className="absolute top-4 right-4">
+                      <button
+                        className="right-0 bg-red-400 py-0 px-2 justify-center text-center text-[#fff]"
+                        onClick={() => setIsImageHH(false)}
+                      >
+                        x
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>

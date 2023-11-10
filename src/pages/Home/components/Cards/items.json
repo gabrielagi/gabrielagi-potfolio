@@ -16,7 +16,7 @@
   {
     "id": 3,
     "title": "Education 📝",
-    "subtitle": ["Development", "UX UI", "Scrum", "Agile", "Kanban"],
+    "subtitle": ["UX UI", "Scrum", "Development", "Agile", "Kanban"],
     "description": "Creating cross-platform mobile apps with a focus on user experience and performance.",
     "image": "mobile_app_dev_image.jpg"
   }
