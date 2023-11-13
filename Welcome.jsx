@@ -93,7 +93,7 @@ const Welcome = () => {
               <p className="flex text-[20px] font-baloo2 text-[#1d252d] md:ml-12 ml-3 mr-3">
                 New Technologies:
               </p>
-              <p className="flex text-[15px] font-semibold  bg-[#a58eff] rounded-full text-white text-center px-4 py-1 md:mr-0 mr-2">
+              <p className="text-[15px] font-semibold  bg-[#a58eff] rounded-full text-white text-center px-4 py-1 md:mr-0 mr-2">
                 React Native, Java, Spring Boot
               </p>
             </div>
