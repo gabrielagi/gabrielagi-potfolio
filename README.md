@@ -25,5 +25,6 @@ I hope you enjoy exploring my portfolio as much as I enjoyed creating it! 😄
 Thank you for your visit!
 
 Gabriela Iriart
+
 Contact:
-gabrielairiart.gi@gmail.com | linkedin.com/in/gabriela-iriart/ | behance.net/gabrielairiart
+gabrielairiart.gi@gmail.com | [LinkedIn](https://www.linkedin.com/in/gabriela-iriart/) | [Behance](https://www.behance.net/gabrielairiart)
