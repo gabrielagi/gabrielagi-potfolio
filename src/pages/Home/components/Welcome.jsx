@@ -128,7 +128,7 @@ const Welcome = () => {
                   <img src={Email} alt="Email" className="w-10 h-10" />
                 </Link>
 
-                {showEmail && (
+                {/* {showEmail && (
                   <div className="fixed z-10">
                     <div className="bg-white border-2 border-[#724FFF] rounded-full text-[#724FFF] text-center px-10 py-2 absolute">
                       <p className="text-[14px] font-semibold">
@@ -144,7 +144,7 @@ const Welcome = () => {
                       </button>
                     </div>
                   </div>
-                )}
+                )} */}
               </div>
             </div>
             <div className="flex mt-6 md:mt-8 md:mb-0 mb-8">
