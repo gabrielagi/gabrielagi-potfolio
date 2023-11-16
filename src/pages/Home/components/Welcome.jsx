@@ -14,6 +14,10 @@ const Welcome = () => {
   const [showEmail, setShowEmail] = useState(false);
   const [showCarousel, setShowCarousel] = useState(true);
   const [showProjects, setShowProjects] = useState(false);
+  const [showCV, setShowCV] = useState(false);
+
+  const urlDelPDF =
+    "https://drive.google.com/file/d/1WuofS7AQ8ZVC_u_2L1I9hWrP7LYau3uy/view";
 
   useEffect(() => {
     const handleResize = () => {
@@ -43,7 +47,7 @@ const Welcome = () => {
             </div>
           )}
           {showProjects && (
-            <div className="fixed z-10">
+            <div className="fixed z-10 top-10">
               <div className="absolute right-4 mt-2">
                 <button
                   className="right-0 bg-red-400 py-0 px-2 justify-center text-center text-[#fff]"
@@ -58,6 +62,31 @@ const Welcome = () => {
               </div>
             </div>
           )}
+          {showCV && (
+            <div className="fixed z-10 top-10">
+              <div className="absolute right-4 mt-2">
+                <button
+                  className="right-0 bg-red-400 py-0 px-2 justify-center text-center text-[#fff]"
+                  onClick={() => setShowCV(false)}
+                >
+                  x
+                </button>
+              </div>
+              <div className="mt-10 ml-0 md:ml-44 w-full md:w-[900px] border-2 border-[#724FFF] rounded-xl bg-white py-2 px-6">
+                <h2>Visor de PDF</h2>
+                <iframe
+                  title="PDF Viewer"
+                  src={
+                    "https://drive.google.com/file/d/1WuofS7AQ8ZVC_u_2L1I9hWrP7LYau3uy/preview"
+                  }
+                  width="100%"
+                  height="500"
+                  frameBorder="0"
+                />
+              </div>
+            </div>
+          )}
+
           <div className="md:w-[800px] w-full mb-8 ">
             <p className="text-[35px] font-baloo2 font-bold text-[#fff] md:mt-3 mt-20 d:ml-12 ml-3 md:mb-0 mb-4 text-left">
               Tech Skills
@@ -87,8 +116,14 @@ const Welcome = () => {
                   Projects
                 </p>
               </div>
-
-              <p className="text-sm text-[#1d252d] block ">Documentation</p>
+              <div>
+                <p
+                  className="text-sm text-[#1d252d] block mr-12 "
+                  onClick={() => setShowCV(true)}
+                >
+                  Curriculum
+                </p>
+              </div>
               <div className="bg-[#724FFF] rounded-full text-white text-center px-5 py-2 absolute md:right-6 right-2 md:mt-0 mt-12">
                 <p className="text-sm font-semibold">
                   Welcome to my Portfolio!
