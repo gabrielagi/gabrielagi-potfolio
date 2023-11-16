@@ -8,10 +8,12 @@ import techskills from "./techskills.json";
 import Linkedin from "../../../assets/linkedin-logo.png";
 import Github from "../../../assets/github-logo.png";
 import Email from "../../../assets/email-logo.png";
+import ProjectsRender from "../../Projects/Projects";
 
 const Welcome = () => {
   const [showEmail, setShowEmail] = useState(false);
   const [showCarousel, setShowCarousel] = useState(true);
+  const [showProjects, setShowProjects] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -34,9 +36,26 @@ const Welcome = () => {
           <div className="bg-[#724FFF] rounded-full text-white text-center px-5 py-2 absolute right-0 md:mt-14 mt-5">
             <p className="text-sm font-semibold">Recent Projects</p>
           </div>
+
           {showCarousel && (
             <div className="mt-24">
               <CardsCarousel />
+            </div>
+          )}
+          {showProjects && (
+            <div className="fixed z-10">
+              <div className="absolute right-4 mt-2">
+                <button
+                  className="right-0 bg-red-400 py-0 px-2 justify-center text-center text-[#fff]"
+                  onClick={() => setShowProjects(false)}
+                >
+                  x
+                </button>
+              </div>
+              <div className="mt-10 ml-0 md:ml-44 md:w-[900px] w-[400px] border-2 border-[#724FFF] rounded-xl bg-white py-2 px-6">
+                ?
+                <ProjectsRender />
+              </div>
             </div>
           )}
           <div className="md:w-[800px] w-full mb-8 ">
@@ -60,7 +79,15 @@ const Welcome = () => {
         <div className="w-10/12 h-auto relative mx-auto rounded-2xl mt-5 md:mt-5 bg-white  mb-8">
           <div className="font-baloo2  md:ml-10 ml-4 md:mr-0 mr-2">
             <div className="flex md:mt-5 mt-8 font-bold md:ml-0 ml-4">
-              <p className="text-sm text-[#1d252d] block mr-12 ">Projects</p>
+              <div>
+                <p
+                  className="text-sm text-[#1d252d] block mr-12 "
+                  onClick={() => setShowProjects(true)}
+                >
+                  Projects
+                </p>
+              </div>
+
               <p className="text-sm text-[#1d252d] block ">Documentation</p>
               <div className="bg-[#724FFF] rounded-full text-white text-center px-5 py-2 absolute md:right-6 right-2 md:mt-0 mt-12">
                 <p className="text-sm font-semibold">
